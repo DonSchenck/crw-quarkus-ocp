@@ -21,7 +21,7 @@ public class PriceConverter {
     private static double highestPriceSoFar = 0.0;
     private static final double CONVERSION_RATE = 0.88;
 
-    @Counted(name = "convertedPrices", monotonic = true, description = "How many prices have been converted.")
+    @Counted(name = "convertedPrices", description = "How many prices have been converted.")
     @Timed(name = "converter", description = "A measure how long it takes to convert prices.", unit = MetricUnits.MILLISECONDS)
     @Incoming("prices")
     @Outgoing("my-data-stream")
