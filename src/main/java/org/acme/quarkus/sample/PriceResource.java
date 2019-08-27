@@ -24,6 +24,11 @@ public class PriceResource {
         return "hello";
     }
 
-    // TODO: add reactive stream resource
+    @GET
+    @Path("/stream")
+    @Produces(MediaType.SERVER_SENT_EVENTS)
+    public Publisher<Double> stream() {
+        return prices;
+    }
 
 }
