@@ -86,7 +86,22 @@ Now that we have a cluster and a project, we're going to install some operators 
 
 * Click the "Create" button; within seconds you have a Kafka cluster running in OpenShift, available for use by your applications.
 
-* With the AMQ Streams panel being displayed, click on the "my-cluster" link. This displays some details abou the cluster. Click on the YAML heading to view the yaml associated with the created cluster. Make special note of the "host:" listed near the bottom. This value will be used later in the Java code. Again; since this is a pre-package demo, the value is already supplied in the Java code. But this, too, is important to note.
+* With the AMQ Streams panel being displayed, click on the "my-cluster" link.
+
+  ![my cluster](images/my-cluster.PNG)  
+
+
+* Details about the cluster are displayed. Click on the YAML heading to view the yaml associated with the created cluster.
+
+  ![my-cluster-details](images/my-cluster-details.PNG)  
+
+
+* Make special note of the "host:" listed near the bottom. This value will be used later in the Java code. Again; since this is a pre-package demo, the value is already supplied in the Java code. But this, too, is important to note.
+
+  ![my cluster host](images/my-cluster-host.PNG)  
+
+
+  **A note about naming:** Throughout this demo/workshop, we have made assumptions about naming. In a real-world situation you would, in fact, do the same thing. One of the values of intentionally scripting and documenting your infrastructure is that *you* can assign names before they make it into code -- or vice-versa -- and have complete control.
 
 ### "The host isn't listed"
 That's because it may take a few minutes for the kafka instance to start. Wait a few minutes and reload the YAML. Repeat this until the host appears.
