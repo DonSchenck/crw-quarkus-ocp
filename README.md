@@ -19,7 +19,7 @@ This demo is operating system agnostic; you can use macOS, Linux or Windows, sin
 ### Create a project for our workshop. 
 * Click on "Projects" on the left-hand menu on the dashboard.  
 
-![projects](images/createProjectButton.png) 
+![projects button](images/createProjectButton.png) 
 
 
 * Click on the "Create Project" button on the dashboard and fill in the following values:  
@@ -28,7 +28,7 @@ This demo is operating system agnostic; you can use macOS, Linux or Windows, sin
   Display Name: Quarkus and Kafka Demo  
 
 
-![projects](images/createProjectForm.png) 
+![projects form](images/createProjectForm.png) 
 
 
 * Click the "Create" button.
@@ -37,6 +37,10 @@ Now that we have a cluster and a project, we're going to install some operators 
 
 ### Install AMQ Streams Operator from OperatorHub
 1. Expand the Catalog section of the menu by clicking once on "Catalog". You will see a list of catalogs.  
+
+![operator hub](images/catalogOperatorHubMenu.png)
+
+
 1. Proceed to the OperatorHub by clicking once on "OperatorHub". You have have the OpenShift OperatorHub displayed, with dozens of operators available.  
 
 1. Find the operator entitled "AMQ Streams" (provided by Red Hat, Inc.). Click once on the tile; you will be prompted to install AMQ Streams.
