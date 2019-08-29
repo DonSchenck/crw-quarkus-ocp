@@ -84,7 +84,7 @@ Now that we have a cluster and a project, we're going to install some operators 
   ![create kafka](images/createKafka.PNG)  
 
 
-* Click the "Create" button; within seconds you have a Kafka cluster running in OpenShift, available for use by your applications.
+* Click the "Create" button and the Kafka cluster running in OpenShift will start to build. It will be available for use by your applications in a few minutes.
 
 * With the AMQ Streams panel being displayed, click on the "my-cluster" link.
 
@@ -109,17 +109,41 @@ That's because it may take a few minutes for the kafka instance to start. Wait a
 Example: my-cluster-kafka-bootstrap.openshift-operators.svc
 
 ### Install CodeReady Workspaces from OperatorHub
-1. Click on the "OperatorHub" option on the left-hand menu.
-1. Find the card labeled "Red Hat CodeReady Workspaces" (provided by Red Hat, Inc.). Click on the card to begin.
-1. When prompted, click the "Install" button.
-1. When the screen titled "Create Operator Subscription" is presented, change the value for "A specific namespace on the cluster" to "quarkus". No other values need to be changed.
-1. Click the "Subscribe" button to continue.
+* Click on the "OperatorHub" option on the left-hand menu.
+* Find the card labeled "Red Hat CodeReady Workspaces" (provided by Red Hat, Inc.). Click on the card to begin.
+
+  ![codeready workspaces card](images/codeready-workspaces-card.PNG)  
+
+* When prompted, click the "Install" button.
+
+  ![codeready workspaces install](images/codeready-workspaces-install.PNG)  
+
+* When the screen titled "Create Operator Subscription" is presented, change the value for "A specific namespace on the cluster" to "quarkus". No other values need to be changed.
+* Click the "Subscribe" button to continue.
+
+  ![codeready workspaces create](images/codeready-workspaces-create.PNG)  
 
 
 #### Create Che Cluster
-1. Click on the Installed Operators option on the left-hand menu to display the "Installed Operators" panel. Here you will see the subscription titled "codeready-workspaces".
-1. When the status shows "InstallSucceeded", click on the provided API labeled "Red Hat CodeReadby Workspaces Cluster".
-1. At the "Che Clusters" page, click on the button labeled "Create Che Cluster". When the YAML is displayed, simply click the "Create" button at the bottom.
+* Wait until the codeready-workspaces operator status reveals "1 installed".
+
+  ![codeready workspaces installed](images/codeready-workspaces-installed.PNG)  
+
+
+* Click on the Installed Operators option on the left-hand menu to display the "Installed Operators" panel. Here you will see the Red Hat CodeReady Workspaces opertor.
+
+  ![codeready workspaces operator](images/codeready-workspaces-operator.PNG)  
+
+
+* When the status shows "InstallSucceeded", click on the provided API labeled "Red Hat CodeReadby Workspaces Cluster".
+
+  ![codeready workspaces api](images/codeready-workspaces-api.PNG)  
+
+* At the "Che Clusters" page, click on the button labeled "Create Che Cluster".
+
+  ![create che cluster](images/create-che-cluster.PNG)  
+
+* When the YAML is displayed, simply click the "Create" button at the bottom.
 
 This will take several minutes.
 
