@@ -19,7 +19,7 @@ This demo is operating system agnostic; you can use macOS, Linux or Windows, sin
 ### Create a project for our workshop. 
 * Click on "Projects" on the left-hand menu on the dashboard.  
 
-  ![Project button](./createProjectButton.png)  
+<img src="https://github.com/DonSchenck/crw-quarkus-ocp/blob/gh-pages/createProjectButton.PNG"/>  
 
 
 * Click on the "Create Project" button on the dashboard and fill in the following values:  
@@ -28,8 +28,7 @@ This demo is operating system agnostic; you can use macOS, Linux or Windows, sin
   Display Name: Quarkus and Kafka Demo  
 
 
-  ![Project form](./createProjectForm.png)
-
+<img src="https://github.com/DonSchenck/crw-quarkus-ocp/blob/gh-pages/createProjectForm.PNG"/> 
 
 * Click the "Create" button.
 
