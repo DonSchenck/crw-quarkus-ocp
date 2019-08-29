@@ -17,13 +17,21 @@ This demo is operating system agnostic; you can use macOS, Linux or Windows, sin
 1. Log into dashboard as administrator
 
 ### Create a project for our workshop. 
-1. Click on "Projects" on the left-hand menu on the dashboard.  
+* Click on "Projects" on the left-hand menu on the dashboard.  
 
-1. Click on the "Create Project" button on the dashboard and fill in the following values:  
+  ![Project button](createProjectButton.png)  
+
+
+* Click on the "Create Project" button on the dashboard and fill in the following values:  
+  
   Name: quarkus  
-  Display Name: Quarkus and Kafka Demo
+  Display Name: Quarkus and Kafka Demo  
 
-1. Click the "Create" button.
+
+  ![Project form](createProjectForm.png)
+
+
+* Click the "Create" button.
 
 Now that we have a cluster and a project, we're going to install some operators in the project, including CodeReady Workspaces.
 
