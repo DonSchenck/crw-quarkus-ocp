@@ -77,10 +77,16 @@ Now that we have a cluster and a project, we're going to install some operators 
   ![create kafka](images/amqCreateKafka.PNG)  
 
 
-1. You are now shown the YAML that is used to create the Kafka instance. You can make changes as necessary -- we will not be making any changes.
-1. Make note of the "name:" value in the meta data near the top. This value, "my-cluster", will be needed for the Java code we'll be running. Of course, since this is a pre-packaged demo, the value is already supplied in the Java code. But this is important to note.
-1. Click the "Create" button; within seconds you have a Kafka cluster running in OpenShift, available for use by your applications.
-1. With the AMQ Streams panel being displayed, click on the "my-cluster" link. This displays some details abou the cluster. Click on the YAML heading to view the yaml associated with the created cluster. Make special note of the "host:" listed near the bottom. This value will be used later in the Java code. Again; since this is a pre-package demo, the value is already supplied in the Java code. But this, too, is important to note.
+* You are now shown the YAML that is used to create the Kafka instance. You can make changes as necessary -- we will not be making any changes.
+
+* Note of the "name:" value in the meta data near the top. This value, "my-cluster", will be needed for the Java code we'll be running. Of course, since this is a pre-packaged demo, the value is already supplied in the Java code. But this is important to note.
+  
+  ![create kafka](images/createKafka.PNG)  
+
+
+* Click the "Create" button; within seconds you have a Kafka cluster running in OpenShift, available for use by your applications.
+
+* With the AMQ Streams panel being displayed, click on the "my-cluster" link. This displays some details abou the cluster. Click on the YAML heading to view the yaml associated with the created cluster. Make special note of the "host:" listed near the bottom. This value will be used later in the Java code. Again; since this is a pre-package demo, the value is already supplied in the Java code. But this, too, is important to note.
 
 ### "The host isn't listed"
 That's because it may take a few minutes for the kafka instance to start. Wait a few minutes and reload the YAML. Repeat this until the host appears.
