@@ -19,7 +19,7 @@ This demo is operating system agnostic; you can use macOS, Linux or Windows, sin
 ### Create a project for our workshop. 
 * Click on "Projects" on the left-hand menu on the dashboard.  
 
-![projects button](images/createProjectButton.png) 
+  ![projects button](images/createProjectButton.png) 
 
 
 * Click on the "Create Project" button on the dashboard and fill in the following values:  
@@ -28,7 +28,7 @@ This demo is operating system agnostic; you can use macOS, Linux or Windows, sin
   Display Name: Quarkus and Kafka Demo  
 
 
-![projects form](images/createProjectForm.PNG) 
+  ![projects form](images/createProjectForm.PNG) 
 
 
 * Click the "Create" button.
@@ -36,15 +36,28 @@ This demo is operating system agnostic; you can use macOS, Linux or Windows, sin
 Now that we have a cluster and a project, we're going to install some operators in the project, including CodeReady Workspaces.
 
 ### Install AMQ Streams Operator from OperatorHub
-1. Expand the Catalog section of the menu by clicking once on "Catalog". You will see a list of catalogs.  
 
-![operator hub](images/catalogOperatorHubMenu.PNG)
+* Expand the Catalog section of the menu by clicking once on "Catalog". You will see a list of catalogs.  
+
+  ![operator hub](images/catalogOperatorHubMenu.PNG)
 
 
-1. Proceed to the OperatorHub by clicking once on "OperatorHub". You have have the OpenShift OperatorHub displayed, with dozens of operators available.  
+* Proceed to the OperatorHub by clicking once on "OperatorHub". You have have the OpenShift OperatorHub displayed, with dozens of operators available.
 
-1. Find the operator entitled "AMQ Streams" (provided by Red Hat, Inc.). Click once on the tile; you will be prompted to install AMQ Streams.
-1. Click the "Install" button to begin the installation. You are then given to opportunity to change some settings. Leave the choices as-is and click the "Subscribe" button. 
+  ![operator hub contents](images/operatorHubContents.PNG)
+
+
+* Find the operator entitled "AMQ Streams" (provided by Red Hat, Inc.).
+
+  ![amq streams card](images/amqStreamsCard.PNG)  
+
+* Click once on the tile; you will be prompted to install AMQ Streams.
+
+  ![amq streams install](images/amqStreamsInstall.PNG)  
+
+* Click the "Install" button to begin the installation. You are then given to opportunity to change some settings. Leave the choices as-is and click the "Subscribe" button. 
+
+  ![create AMQ Stream](images/createAMQStream.PNG)  
 
 ### Create Kafka Instance
 1. Click on "Installed Operators" on the left-hand menu. You will see the AMQ Stream operator listed. If you do not see it, wait a few minutes until it appears. Wait until you see the STATUS switch to "InstallSucceeded".
