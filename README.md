@@ -28,7 +28,7 @@ This demo is operating system agnostic; you can use macOS, Linux or Windows, sin
   Display Name: Quarkus and Kafka Demo  
 
 
-![projects form](images/createProjectForm.png) 
+![projects form](images/createProjectForm.PNG) 
 
 
 * Click the "Create" button.
@@ -38,7 +38,7 @@ Now that we have a cluster and a project, we're going to install some operators 
 ### Install AMQ Streams Operator from OperatorHub
 1. Expand the Catalog section of the menu by clicking once on "Catalog". You will see a list of catalogs.  
 
-![operator hub](images/catalogOperatorHubMenu.png)
+![operator hub](images/catalogOperatorHubMenu.PNG)
 
 
 1. Proceed to the OperatorHub by clicking once on "OperatorHub". You have have the OpenShift OperatorHub displayed, with dozens of operators available.  
