@@ -60,9 +60,23 @@ Now that we have a cluster and a project, we're going to install some operators 
   ![create AMQ Stream](images/createAMQStream.PNG)  
 
 ### Create Kafka Instance
-1. Click on "Installed Operators" on the left-hand menu. You will see the AMQ Stream operator listed. If you do not see it, wait a few minutes until it appears. Wait until you see the STATUS switch to "InstallSucceeded".
-1. Under the "PROVIDED APIS" heading for the AMQ Streams operation, you can see Kafka apis. We will select the "Kafka" api. Begin the installation by clicking once on the Kafka link.
-1. The next screen provides you with a list of running Kafka instances. There should be none. Click the "Create Kafka" button to continue.
+
+* Click on "Installed Operators" on the left-hand menu. You will see the AMQ Stream operator listed. If you do not see it, wait a few minutes until it appears. Wait until you see the STATUS switch to "InstallSucceeded".
+
+  ![installed operators](images/installedOperators.PNG)  
+  
+  ![amq install succeeded](images/amqInstallSucceeded.PNG)  
+
+
+* Under the "PROVIDED APIS" heading for the AMQ Streams operation, you can see Kafka apis. We will select the "Kafka" api. Begin the installation by clicking once on the Kafka link.
+
+  ![kafka api link](images/amqProvidedAPIs.PNG)  
+
+* The next screen provides you with a list of running Kafka instances. There should be none. Click the "Create Kafka" button to continue.
+
+  ![create kafka](images/amqCreateKafka.PNG)  
+
+
 1. You are now shown the YAML that is used to create the Kafka instance. You can make changes as necessary -- we will not be making any changes.
 1. Make note of the "name:" value in the meta data near the top. This value, "my-cluster", will be needed for the Java code we'll be running. Of course, since this is a pre-packaged demo, the value is already supplied in the Java code. But this is important to note.
 1. Click the "Create" button; within seconds you have a Kafka cluster running in OpenShift, available for use by your applications.
