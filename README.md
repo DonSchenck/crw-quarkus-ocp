@@ -145,19 +145,24 @@ Example: my-cluster-kafka-bootstrap.openshift-operators.svc
 
 * When the YAML is displayed, simply click the "Create" button at the bottom.
 
-This will take several minutes.
+**This will take several minutes.**
 
-Expand the "Networking" section of the left-hand menu and click on the "Route" link. When a route appears for "codeready", your CodeReady Workspaces instance is ready for use. The supplied URL will take you there; click on it.
+* Expand the "Networking" section of the left-hand menu and click on the "Route" link
+
+  ![networking routes](images/networking-routes.PNG)
+
+* When a route appears for "codeready", your CodeReady Workspaces instance is ready for use. The supplied URL will take you there; click on it.
+
+  ![crw route](images/crw-route.PNG)
+
 
 If you get the "Application is not available" error, that means the CodeReady Workspaces installation isn't 100 percent complete. Wait a bit a keep refreshing the browser until it is ready. It may take as long at ten minutes.
 
-(That's fine; this is a one-time setup.)
+(That's fine; this is a one-time setup. That is: Once you have CodeReady Workspaces up and running, your developers will not wait for it; it will always be only a URL away.)
 
-Log in as user "admin" with password "admin". You will see the "New Workspaces" panel.
+* Log in as user "admin" with password "admin". You will see the "New Workspaces" panel.
 
-
-
-
+  ![new workspaces](images/new-workspaces.PNG)
 
 ## Quarkus with CodeReady Workspaces
 Now the hardest part of this demo: Creating the custom stack.
@@ -165,22 +170,33 @@ Now the hardest part of this demo: Creating the custom stack.
 ### Create Java + Quarkus + odo stack
 Creating a custom stack involves copying and pasting some JSON.
 
-Open your CodeReady Workspaces in a browser and log in as user 'admin', using password 'admin'.
+* Open your CodeReady Workspaces in a browser and log in as user 'admin', using password 'admin'.
 
-Change the URL to match the following pattern:
+* Change the URL to match the following pattern:
 
 ${CHE_HOST}/swagger/#!/stack/createStack
 
 For example: 
 http://codeready-quarkus-demo.apps.cluster-york-b654.york-b654.openshiftworkshop.com/swagger/#!/stack/createStack
 
-Expand the "POST" operation by clicking on the word "POST". Within the context of the POST operation, you will see a textbox labeled "body". You will paste a JSON document into that textbox. The document can be found at https://raw.githubusercontent.com/DonSchenck/crw-quarkus-ocp/master/stack.json.
+  ![create-stack-1](images/create-stack-1.PNG) 
 
-Paste the contents of that JSON document into the "body" textbox and click the "Try it out!" button (a little bit further down the page, at the end of the POST section).
+* Expand the "POST" operation by clicking on the word "POST". Within the context of the POST operation, you will see a textbox labeled "body". You will paste a JSON document into that textbox. The document can be found at https://raw.githubusercontent.com/DonSchenck/crw-quarkus-ocp/master/stack.json.
 
-Verify that the stack was correctly built by checking the Response Code; if it read "201", it was successful.
+  ![create stack 2](images/create-stack-2.PNG)  
 
-Now when you return to the CodeReady Workspaces dashboard and select "Stacks", you will see the new "Quarkus Java, CodeReady, odo" stack listed.
+* Paste the contents of that JSON document into the "body" textbox and click the "Try it out!" button (a little bit further down the page, at the end of the POST section).
+
+  ![create stack 3](images/create-stack-3.PNG)  
+
+
+* Verify that the stack was correctly built by checking the Response Code; if it read "201", it was successful.
+
+  ![201 response](images/create-stack-4.PNG) 
+
+* Now when you return to the CodeReady Workspaces dashboard and select "Stacks", you will see the new "Quarkus Java, CodeReady, odo" stack listed.
+
+  ![new stack](images/create-stack-5.PNG) 
 
 #### Create Java + Quarkus + odo workspace
 Click on "Workspaces" on the left-hand menu.
