@@ -176,7 +176,7 @@ Creating a custom stack involves copying and pasting some JSON.
 
 ${CHE_HOST}/swagger/#!/stack/createStack
 
-For example: 
+* For example: 
 http://codeready-quarkus-demo.apps.cluster-york-b654.york-b654.openshiftworkshop.com/swagger/#!/stack/createStack
 
   ![create-stack-1](images/create-stack-1.PNG) 
@@ -229,12 +229,12 @@ Now that the workspace is running and open, we can import the project from Githu
 
 * Click the "Import" button. In a few seconds the project will be imported. You will be prompted for the Project Configuration. Select JAVA --> Maven and then click the "Save" button.
 
-![set project configuration](images/import-project-3.PNG) 
+  ![set project configuration](images/import-project-3.PNG) 
 
 #### Start Live Coding
 * In the upper right corner, locate and click on the Commands Palette icon. From the dialog box, double-click the "Start Live Coding" entry.
 
-![start live coding](images/start-live-coding.PNG) 
+  ![start live coding](images/start-live-coding.PNG) 
 
 * After a few seconds the code will be running. Click on the supplied URL to go to the web page.
 
@@ -269,4 +269,17 @@ Now that the code is running and generating events, we can change the code and Q
 * Now switch back to the browser and refresh the screen. You will see the output change; specifically, the Y axis will change to reflect our range of values. Previously the Price Generator was creating prices from zero to 100. Now it is creating prices from zero to 1,000. This is the power of Quarkus' "Live Coding" ability.
  
  ![new axis](images/quarkus-app-y-axis-changed.PNG) 
+
+ ## Recap
+
+ In this demo/workshop, we have:
+ 1. Created a Kafka instance in OpenShift
+ 1. Created a CodeReady Workspaces (CRW) instance in OpenShift
+ 1. Created a Custom Stack in CRW.
+ 1. Created a Workspace in CRW using our Custom Stack.
+ 1. Imported a Github project into our workspace.
+ 1. Launched the Quarkus application from within CRW in a Live Coding environment.
+ 1. Altered the Quarkus application source code and viewed the instant results.
+
+ 
 
