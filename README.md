@@ -199,15 +199,19 @@ http://codeready-quarkus-demo.apps.cluster-york-b654.york-b654.openshiftworkshop
   ![new stack](images/create-stack-5.PNG) 
 
 #### Create Java + Quarkus + odo workspace
-Click on "Workspaces" on the left-hand menu.
+* Click on "Workspaces" on the left-hand menu.
 
-Click the "Add Workspace" button.
+* Click the "Add Workspace" button.
 
-Change the workspace name to 'quarkus' (no quotes).
+  ![add workspaces button](images/add-workspace-1.PNG) 
 
-Select the custom stack that was created in the previous section.
+* Change the workspace name to 'quarkus' (no quotes).
 
-Click the large, green "CREATE & OPEN" button at the bottom of the page.
+  ![workspace name](images/add-workspace-2.PNG)
+
+* Select the custom stack that was created in the previous section.
+
+* Click the large, green "CREATE & OPEN" button at the bottom of the page.
 
 After a few minutes, your workspace will be ready.
 IF YOU GET AN ERROR, simply click on the link supplied to try again.
@@ -215,38 +219,54 @@ IF YOU GET AN ERROR, simply click on the link supplied to try again.
 #### Import Quarkus project from Github
 Now that the workspace is running and open, we can import the project from Github.  
 
-1. Click on the "Import Project..." link in the center of the page.
-1. Select GITHUB as the Version Control System and enter the following URL: https://github.com/donschenck/crw-quarkus-ocp.
-1. Click the "Import" button. In a few seconds the project will be imported. You will be prompted for the Project Configuration.
-1. Select JAVA --> Maven and then click the "Save" button.
+* Click on the "Import Project..." link in the center of the page.
 
-#### Build and Run Locally
-In the upper right corner, locate and click on the Commands Palette icon. From the dialog box, double-click the "Start Live Coding" entry. After a few seconds the code will be running. Click on the supplied URL to go to the web page.
+  ![import project](images/import-project.PNG) 
 
+* Select GITHUB as the Version Control System and enter the following URL: https://github.com/donschenck/crw-quarkus-ocp.
+
+  ![import from github prompt](images/import-project-2.PNG) 
+
+* Click the "Import" button. In a few seconds the project will be imported. You will be prompted for the Project Configuration. Select JAVA --> Maven and then click the "Save" button.
+
+![set project configuration](images/import-project-3.PNG) 
+
+#### Start Live Coding
+* In the upper right corner, locate and click on the Commands Palette icon. From the dialog box, double-click the "Start Live Coding" entry.
+
+![start live coding](images/start-live-coding.PNG) 
+
+* After a few seconds the code will be running. Click on the supplied URL to go to the web page.
+
+  ![url to app](images/quarkus-app-url.PNG) 
 
 #### See results in browser
 
-If the page does not display, wait a few seconds and refresh the browser. Continue this until you see a page similar to the following:
---
+*If the page does not display, wait a few seconds and refresh the browser. Continue this until you see a page similar to the following:
+
+  ![web app](images/quarkus-app.PNG) 
 
 #### Change code
 Quarkus has a feature known as "Live Coding", where the output will update in seconds as you code in CodeReady Workspaces.
 
 Now that the code is running and generating events, we can change the code and Quarkus will, on-the-fly, update the results. 
 
-Locate the file "PriceGenerator.java" in the CodeReady IDE and change the following line  
+* Locate the file "PriceGenerator.java" in the CodeReady IDE and change the following line  
 
         return Flowable.interval(1000, TimeUnit.MILLISECONDS)
                 .map(tick -> random.nextInt(100));
 
 
-to
+  to
 
         return Flowable.interval(1000, TimeUnit.MILLISECONDS)
                 .map(tick -> random.nextInt(1000));
 
+  ![line to change](images/price-generator.PNG) 
 
 #### See results updated almost immediately
 
-Now switch back to the browser and refresh the screen. You will see the output change. This is the power of Quarkus' "Live Coding" ability.
+* Now switch back to the browser and refresh the screen. You will see the output change; specifically, the Y axis will change to reflect our range of values. Previously the Price Generator was creating prices from zero to 100. Now it is creating prices from zero to 1,000. This is the power of Quarkus' "Live Coding" ability.
+ 
+ ![new axis](images/quarkus-app-y-axis-changed.PNG) 
 
